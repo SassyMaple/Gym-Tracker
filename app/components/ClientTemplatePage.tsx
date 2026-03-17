@@ -2,8 +2,9 @@
 
 import React, { useState } from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { TemplateForm } from '@/components/ui/templateform'
+// import { TemplateForm } from '@/components/ui/templateform'
 import ExerciseTemplateTable from '@/app/components/ExerciseTemplateTable'
+import { NewTemplateForm } from '@/components/ui/newtemplateform'
 
 
 
@@ -80,7 +81,7 @@ const ClientTemplatePage = () => {
             </div>
 
             {/* RIGHT PANEL */}
-            <TemplateForm clientday={dayofweek} type = "all" triggerrefresh={triggerrefresh}/>
+            <NewTemplateForm clientday={dayofweek} type = "all" triggerrefresh={triggerrefresh}/>
 
         </div>
     )
